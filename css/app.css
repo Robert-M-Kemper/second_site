@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+  }
+  #main > article {
+    flex: 1;
+    background-color: white;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+    background: #AA148C;
+  }
+  #main > nav {
+    order: -1;
+  }
+  
+  header, footer {
+    background: #14AA31;
+    height: 20vh;
+    text-transform: uppercase
+    font-s
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  @media screen and (max-width:575px){
+    #main {
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    }
+    
+    }
+
+    #para1{
+      text-align: center;
+    }
+a{
+  text-decoration: none;
+}
